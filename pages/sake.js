@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
+import { ChakraProvider, Container, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import { useAddress } from "@thirdweb-dev/react";
 import StakeToken from "../components/StakeToken";
 import RewardToken from "../components/RewardToken";
@@ -11,18 +11,22 @@ const sake = () => {
   if (!address) {
     return (
       <>
-            <Navbar/>
+      <ChakraProvider>
+        <Navbar/>
         <Container maxW={"1200px"}>
           <Flex h={"50vh"} justifyContent={"center"} alignItems={"center"}>
             <Heading>Please Connect a Wallet</Heading>
           </Flex>
         </Container>
+      </ChakraProvider>
+       
       </>
     );
   }
 
   return (
     <>
+      <ChakraProvider>
       <Navbar/>
       <Container maxW={"1200px"}>
         <SimpleGrid columns={2} spacing={4} mt={10}>
@@ -31,6 +35,8 @@ const sake = () => {
         </SimpleGrid>
         <Stake />
       </Container>
+      </ChakraProvider>
+      
     </>
   );
 };

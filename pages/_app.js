@@ -18,9 +18,9 @@ export default function App({ Component, pageProps }) {
     >
      
       <PROVIDER>
-        <ChakraProvider>
-          <Component {...pageProps} />
-        </ChakraProvider>
+      
+        <Component {...pageProps} />
+
        
       </PROVIDER>
       <Toaster />
