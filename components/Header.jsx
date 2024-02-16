@@ -1,7 +1,8 @@
 import React from "react";
 import { shortenAddress } from "../utils";
-import { Button } from "@chakra-ui/react";
+import { Button, ChakraProvider } from "@chakra-ui/react";
 import Link from "next/link";
+
 
 //INTERNAL IMPORT
 const Header = ({ address, connect }) => {
@@ -78,10 +79,11 @@ const Header = ({ address, connect }) => {
         </ul>
         <div style={{marginLeft: "1rem"}}>
           <Link href="/sake" >
-            <Button colorScheme="purple" size="lg">
-              Stake
-            </Button>
+              <button className="new_button">
+                Stake
+              </button>
           </Link>
+
          </div>
 
         </div>
