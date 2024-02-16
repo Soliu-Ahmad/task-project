@@ -19,18 +19,18 @@ const Header = ({ address, connect }) => {
       name: "How It Works",
       link: "#howworks",
     },
-    {
-      name: "Q&A",
-      link: "#question",
-    },
-    {
-      name: "Blog",
-      link: "#blog",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
+    // {
+    //   name: "Q&A",
+    //   link: "#question",
+    // },
+    // {
+    //   name: "Blog",
+    //   link: "#blog",
+    // },
+    // {
+    //   name: "Contact",
+    //   link: "#contact",
+    // },
   ]
   return (
   <div className="mein-menu">

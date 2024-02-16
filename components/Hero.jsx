@@ -43,9 +43,7 @@ const Hero = ({  setInputAmount,
               <h3 className="subtaitle">Fast and Convinient</h3>
               <h1 className="head">Cryptocurrency Exchange</h1>
               <p className="text">
-                Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. 
-                tempora totam similique !
+              Swap ERC20 tokens for USDC seamlessly with our Exchange dApp, simplifying digital asset conversions for unparalleled convenience and reliability
 
               </p>
             </div>
